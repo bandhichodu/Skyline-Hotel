@@ -1,0 +1,30 @@
+/* Navigation Bar Styling */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(135deg, #2b2d2c, #7e75ff); /* Gradient background */
+  padding: 8px 0; /* Reduced padding for smaller height */
+  height: 50px; /* Reduced height of navbar */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-bottom: 2px solid #444; /* Optional border for extra structure */
+}
+
+/* Navigation Links */
+.navigation a {
+  text-decoration: none;
+  color: #fff; /* White text for contrast */
+  font-size: 16px; /* Smaller font size for a sleeker look */
+  font-weight: bold;
+  padding: 8px 12px; /* Slightly smaller padding */
+  border-radius: 6px; /* Reduced border-radius for a sharper look */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  cursor: pointer; /* Pointer cursor for better interactivity */
+}
+
+.navigation a:hover {
+  background: linear-gradient(135deg, #ff5e6b, #ff8963); /* Gradient on hover */
+  color: #fff; /* Ensures consistent text color */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 12px rgba(255, 94, 107, 0.3); /* Glow effect */
+}

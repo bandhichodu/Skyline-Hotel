@@ -1,0 +1,85 @@
+/* Login Container Styling */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Maximum width for larger screens */
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f0f7ff; /* Soft blue background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  border: 1px solid #d1e7ff; /* Light blue border */
+  text-align: center; /* Center align the content */
+}
+
+/* Label Styling */
+label {
+  display: block;
+  font-size: 16px;
+  color: #e74c3c; /* Red color for labels */
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Input Styling */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  border: 1px solid #bdc3c7; /* Neutral gray border */
+  border-radius: 6px; /* Softer rounded corners */
+  font-size: 14px;
+  color: #2c3e50; /* Darker text for readability */
+  background-color: #ecf0f1; /* Light gray background */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Placeholder Styling */
+input::placeholder {
+  color: #95a5a6; /* Light gray placeholder */
+  font-style: italic;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Softer rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Button hover effect */
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+/* Focus Effect on Input Fields */
+input:focus {
+  border-color: #27ae60; /* Green border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Mobile Responsiveness (Small Screens) */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  input {
+    font-size: 16px; /* Larger text on small screens */
+  }
+
+  button {
+    font-size: 18px; /* Larger button text */
+  }
+}
+

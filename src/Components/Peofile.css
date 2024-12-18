@@ -1,0 +1,164 @@
+/* Overall body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ecef; /* Slightly darker background for more contrast */
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+/* Profile Container */
+.profile-container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 35px;
+  background-color: #ffffff; /* White background for a clean profile look */
+  border: 1px solid #ddd; /* Lighter, softer border */
+  border-radius: 18px; /* More rounded corners for a softer, modern look */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow for a floating effect */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out, background-color 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover for better interactivity */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Increased shadow on hover for a more pronounced floating effect */
+  background-color: #f8f9fa; /* Light background change on hover for visual feedback */
+}
+
+/* Profile Image */
+.profile-container img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #34495e; /* Darker border for better contrast */
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease;
+}
+
+.profile-container img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Light shadow effect on hover */
+}
+
+/* Profile Header */
+.profile-container h2 {
+  color: #2c3e50; /* Darker color for readability */
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase; /* For a more impactful heading */
+}
+
+/* Profile Details Section */
+.profile-container .profile-details {
+  text-align: left;
+  margin-top: 35px;
+}
+
+.profile-container .profile-details label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50; /* Consistent color for labels */
+}
+
+.profile-container .profile-details p {
+  font-size: 17px;
+  color: #555; /* Slightly darker gray text for better readability */
+  margin-bottom: 18px;
+}
+
+.profile-container .profile-details p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #34495e; /* Darker dot color for distinction */
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* Button Styling */
+.profile-container button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  background-color: #34495e; /* Dark button background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #2c3e50; /* Darker button color on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Profile Details Flexbox */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px; /* Increased gap for better spacing */
+}
+
+/* Profile Field Layout */
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-field label {
+  font-weight: bolder;
+  color: #2c3e50;
+  margin-right: 14px;
+}
+
+.profile-field p {
+  margin: 0;
+  color: #555;
+  font-weight: 500;
+  flex: 1;
+  text-align: right;
+}
+
+/* Profile Header Spacing */
+.profile-container h2 {
+  margin-left: 45px;
+  font-size: 36px; /* Larger heading size for better emphasis */
+}
+
+/* Hover Effect on Image */
+.profile-container img:hover {
+  transform: scale(1.12); /* More pronounced zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 25px;
+    width: 85%; /* Adjust width for mobile view */
+  }
+
+  .profile-container img {
+    width: 140px; /* Smaller profile image for mobile */
+    height: 140px;
+  }
+
+  .profile-container h2 {
+    font-size: 26px; /* Smaller heading size for mobile */
+  }
+
+  .profile-details label {
+    font-size: 16px; /* Smaller label text */
+  }
+
+  .profile-details p {
+    font-size: 15px; /* Adjust paragraph font size */
+  }
+}
+

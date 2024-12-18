@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1; /* Light background for a fresh look */
+  margin: 0;
+  padding: 0;
+  color: #444; /* Slightly darker text for better readability */
+}
+
+.newClass {
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for emphasis */
+}
+
+h1 {
+  color: #e74c3c; /* Red tone for titles to make them stand out */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px; /* Larger font size for prominence */
+}
+
+h3 {
+  color: #2c3e50; /* Darker color for subheadings */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e74c3c; /* Matching red border */
+  padding-bottom: 8px;
+  font-size: 24px;
+}
+
+.booking-card {
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #ddd; /* Lighter border for subtle contrast */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoother transition */
+}
+
+.booking-card:hover {
+  transform: translateY(-8px); /* Larger lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Enhanced shadow for hover */
+}
+
+.booking-card strong {
+  color: #16a085; /* Green tone for important details */
+}
+
+.pastbookings, .upcomingbookings {
+  margin-bottom: 30px; /* Increased spacing for better readability */
+}
+
+p {
+  font-size: 16px; /* Slightly larger text for better readability */
+  color: #7f8c8d; /* Muted grey for text */
+  text-align: center;
+}
+
+.navbar {
+  background-color: #16a085; /* Green background for navbar */
+  padding: 15px 30px;
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid #e74c3c; /* Red bottom border for emphasis */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #e74c3c; /* Red hover effect */
+  text-decoration: underline;
+  color: white; /* Keep text color white on hover */
+}
